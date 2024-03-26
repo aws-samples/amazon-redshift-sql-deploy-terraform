@@ -29,7 +29,7 @@ Sample code to deploy a Redshift cluster and database, along with UDFs, tables, 
 4. Deploy the resources using Terraform:
 
     ```bash
-    cd terraform-execute-redshift-sql
+    cd amazon-redshift-sql-deploy-terraform
     terraform init
     terraform plan -var-file terraform.tfvars
     terraform apply -var-file terraform.tfvars

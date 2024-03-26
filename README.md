@@ -19,7 +19,7 @@ Sample code to deploy a Redshift cluster and database, along with UDFs, tables, 
 1. Clone the git repo to your workspace:
 
     ```bash
-    git clone https://gitlab.aws.dev/sylviqi/terraform-execute-redshift-sql
+    git clone https://github.com/aws-samples/amazon-redshift-sql-deploy-terraform.git
     ```
 
 2. There are some sample SQL queries in the `src/redshift` folder. You may want to replace them with your own SQL queries. It is important to organize them in the appropriate folders so they can be executed in the correct sequence. See “Folder Structure for SQL Queries” for information on how to organize the SQL queries. 

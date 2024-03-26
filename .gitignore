@@ -1,0 +1,44 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore sensitive or private information
+*.pem
+*.key
+*.pub
+*.cer
+*.crt
+*.csr
+*.pfx
+*.p12
+*.pem
+*.pem.*
+*.key.*
+*.pub.*
+*.cer.*
+*.crt.*
+*.csr.*
+*.pfx.*
+*.p12.*
+*.pem~
+*.key~
+*.pub~
+*.cer~
+*.crt~
+*.csr~
+*.pfx~
+*.p12~
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+*.tmp
+*.swp
+*.swo
+*.bak
+*.backup
+*.old

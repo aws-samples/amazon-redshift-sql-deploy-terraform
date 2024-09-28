@@ -37,7 +37,7 @@ module "secrets_manager_redshift_master_user" {
   })
 }
 
-# Paswword generator
+# Password generator
 resource "random_password" "redshift_master_password" {
   length           = 16
   special          = true

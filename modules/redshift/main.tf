@@ -126,8 +126,14 @@ resource "aws_redshift_parameter_group" "this" {
   description = var.parameter_group_description
   family      = var.parameter_group_family
 
+  # Enforce SSL for all client connections (CKV_AWS_105). Not overridable.
+  parameter {
+    name  = "require_ssl"
+    value = "true"
+  }
+
   dynamic "parameter" {
-    for_each = var.parameter_group_parameters
+    for_each = { for k, v in var.parameter_group_parameters : k => v if v.name != "require_ssl" }
     content {
       name  = parameter.value.name
       value = parameter.value.value

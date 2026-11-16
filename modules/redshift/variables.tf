@@ -284,7 +284,7 @@ variable "parameter_group_family" {
 }
 
 variable "parameter_group_parameters" {
-  description = "value"
+  description = "Additional parameters for the parameter group. require_ssl is always enforced as true by this module."
   type        = map(any)
   default     = {}
 }
